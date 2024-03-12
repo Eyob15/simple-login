@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2 class="i">SIMPLE</h2>
+        <button id="loginbtn">login</button>
+        <button id="signupbtn">signup</button>
+    </div>
+    <div id="loginmode" class="mode">
+    <div class="mode-cont">
+        <button id="closelogin">X</button><br>
+        <h2>login</h2> <hr>  
+   <input type="text" placeholder="user name"> <br>
+   <input type="email" placeholder="email"><br>
+   <button class="k">LOGIN</button><br>
+ 
+    </div>
+    </div>
+    <div id="signupmode" class="mode">
+        <div class="mode-cont">
+            <button id="closesignup">X</button><br>
+            <h2>signup</h2> <hr>
+        <input type="text" placeholder="user name"><br>
+        <input type="email" placeholder="email"><br>
+        <input type="password" name="" id="" placeholder="password"><br>
+        <button class="m">SIGNUP</button><br>
+        </div>
+         </div>
+         <div class="main">
+<details>
+    <summary>detail</summary>
+<p> this is simple login and signup that have interactive form</p>
+<button class="t">READ MORE</button>
+</details>
+         </div>
+<script>
+    
+    const loginbtn= 
+    document.getElementById("loginbtn");
+    const signupbtn= 
+    document.getElementById("signupbtn");
+    const loginmode=
+    document.getElementById("loginmode");
+    const closelogin=
+    document.getElementById("closelogin");
+    const signupmode=
+    document.getElementById("signupmode");
+    const closesignup=
+    document.getElementById("closesignup");
+
+    loginbtn.addEventListener('click',() =>
+   {
+
+    loginmode.style.display = "block";
+    });
+    
+    signupbtn.addEventListener('click',() =>
+   {
+
+    signupmode.style.display = "block";
+    });
+    closelogin.addEventListener('click',() =>
+   {
+
+    loginmode.style.display = "none";
+    });
+    closesignup.addEventListener('click', () =>
+   {
+
+    signupmode.style.display = "none";
+    });
+</script>
+</body>
+</html>
